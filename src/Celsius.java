@@ -1,15 +1,15 @@
 public class Celsius extends Temperature {
     
-    public Fahrenheit(int value){
+    public Celsius(int value){
         super(value);
     }
-    public abstract String toString() {
-        return getValue() + " Degrees Celsius";
+    public String toString() {
+        return getvalue() + " Degrees Celsius";
     }
-    public abstract boolean belowFreezing(){
+    public boolean belowFreezing(){
       return getvalue() < 0;
     }
-    public abstract boolean swimmingWeather(){
+    public boolean swimmingWeather(){
         return getvalue() >= 27;
     }
 }
